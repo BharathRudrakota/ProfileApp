@@ -1,0 +1,193 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Marcellus&family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Rubik+Vinyl&display=swap');
+*{
+  padding: 0%;
+  margin: 0%;
+  box-sizing: border-box;
+  font-family: "Open Sans", serif;
+  font-optical-sizing: auto;
+  font-style: normal;
+ 
+
+}
+body{
+  background: #5433FF;  /* fallback for old browsers */
+background: -webkit-linear-gradient(to right, #A5FECB, #20BDFF, #5433FF);  /* Chrome 10-25, Safari 5.1-6 */
+background: linear-gradient(to right, #A5FECB, #20BDFF, #5433FF); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+
+ 
+}
+
+
+/* Card Styling */
+.card {
+  border: none;
+  border-radius: 10px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  height: 350px; /* Fixed height for all cards */
+  
+}
+
+.card-img-top {
+  border-top-left-radius: 10px;
+  border-top-right-radius: 10px;
+  height: 150px; /* Fixed height for image */
+  object-fit: cover;
+}
+
+.card-body {
+  padding: 15px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.card-title {
+  font-size: 1.25rem;
+  margin-bottom: 10px;
+}
+
+.card-text {
+  font-size: 0.9rem;
+  color: #6c757d;
+  margin-bottom: 15px;
+  overflow: hidden; /* Ensures the text stays within the card */
+}
+
+.btn-container {
+  display: flex;
+  justify-content: space-between;
+  margin-top: auto; /* Ensure buttons appear at the bottom */
+}
+
+/* Styling for Like, Edit, and Delete Buttons */
+.btn {
+  border-radius: 20px;
+  font-size: 0.9rem;
+  padding: 5px 15px;
+  transition: background-color 0.2s ease, color 0.2s ease;
+}
+
+.btn:hover {
+  filter: brightness(0.9);
+}
+
+.btn-outline-success {
+  color: #28a745;
+  border-color: #28a745;
+}
+
+
+
+.btn-outline-primary {
+  color: #007bff;
+  border-color: #007bff;
+}
+
+
+
+
+.navbar {
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+}
+
+.navbar-brand h1 {
+  font-family: 'Arial', sans-serif;
+  letter-spacing: 1px;
+}
+
+.nav-link {
+  font-weight: 500;
+  font-size: 18px;
+}
+
+.nav-link:hover {
+  color: #ffd700 !important; /* Add hover effect */
+}
+
+.connectify{
+ background-color: transparent;
+ 
+
+}
+/* User card styling */
+.user-card {
+  background-color: #ffffff;
+  border-radius: 15px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1); /* Soft shadow */
+  width: 300px;
+  overflow: hidden;
+  transition: transform 0.3s ease-in-out;
+}
+
+.user-card:hover {
+  transform: scale(1.05); /* Slight scale on hover for effect */
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2); /* Increased shadow on hover */
+}
+
+/* Avatar styling */
+.card-img-top {
+  width: 100%;
+  height: 200px;
+  object-fit: cover;
+  border-radius: 50%;
+  margin-top: 20px;
+}
+
+/* Like Button Icon */
+.btn-outline-danger {
+  border: 1px solid #dc3545;
+  color: #dc3545;
+}
+
+.btn-outline-danger:hover {
+  background-color: #dc3545;
+  color: white;
+}
+
+/* Edit Button */
+.btn-outline-primary {
+  border: 1px solid #007bff;
+  color: #007bff;
+}
+
+.btn-outline-primary:hover {
+  background-color: #007bff;
+  color: white;
+}
+
+/* Buttons */
+.btn {
+  font-weight: bold;
+}
+
+/* Modal styling */
+.modal-header {
+  background-color: #f8f9fa;
+  border-bottom: 2px solid #007bff;
+}
+
+.modal-title {
+  color: #007bff;
+  font-size: 1.5rem;
+}
+
+.modal-body {
+  padding: 30px;
+}
+
+.modal-footer {
+  background-color: #f1f1f1;
+  border-top: 2px solid #007bff;
+}
+
+/* Form input fields */
+.form-control {
+  border-radius: 10px;
+  border: 1px solid #ddd;
+  margin-bottom: 10px;
+  font-size: 1rem;
+  padding: 10px;
+}
