@@ -8,7 +8,42 @@
   font-style: normal;
  
 
+
+
 }
+:root {
+  --bg-color: #ffffff;
+  --text-color: #000000;
+  --card-bg: #f8f9fa;
+  --btn-bg: #007bff;
+  --btn-text: #ffffff;
+}
+
+[data-theme="dark"] {
+  --bg-color: #121212;
+  --text-color: #ffffff;
+  --card-bg: #1e1e1e;
+  --btn-bg: #4caf50;
+  --btn-text: #000000;
+}
+
+body {
+  background-color: var(--bg-color);
+  color: var(--text-color);
+  transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+.card {
+  background-color: var(--card-bg);
+}
+
+.btn {
+  background-color: var(--btn-bg);
+  color: var(--btn-text);
+}
+
+
+
 body{
   background: #5433FF;  /* fallback for old browsers */
 background: -webkit-linear-gradient(to right, #A5FECB, #20BDFF, #5433FF);  /* Chrome 10-25, Safari 5.1-6 */
